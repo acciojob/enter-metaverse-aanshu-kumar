@@ -1,10 +1,9 @@
-//your JS code here. If required.
+function enter() {
+        let status = document.getElementById("status");
+        let heading = document.createElement("h1");
 
-function enter()
-{
-	let status=document.getElementById("status");
-	let heading=documet.createElement("h1");
-	heading.textContent=status.textContent;
-	status.parentNode.replaceChild(heading, status); 
-
-}
+        heading.innerHTML = "Entered Metaverse";
+        status.innerHTML="";
+        status.appendChild(heading);
+        console.log(status)
+      }
